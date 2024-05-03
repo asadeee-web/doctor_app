@@ -1,3 +1,4 @@
+import 'package:doctor_app/ui/widgets/health_needs.dart';
 import 'package:doctor_app/ui/widgets/upcomming_card.dart';
 import 'package:flutter/material.dart';
 
@@ -28,15 +29,28 @@ class HomeScreen extends StatelessWidget {
       ),
       body: ListView(
         padding: const EdgeInsets.all(14),
-        children: const [
+        children: [
           ///
           ///upcomming card
           ///
-          UpcommingCard()
+          UpcommingCard(),
+
+          SizedBox(
+            height: 20,
+          ),
+          Text(
+            "Health Needs",
+            style: Theme.of(context).textTheme.headlineSmall,
+          ),
+          SizedBox(
+            height: 10,
+          ),
 
           ///
           ///Health needs
           ///
+
+          HealthNeeds(),
 
           ///
           ///Nearby Doctors
