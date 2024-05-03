@@ -1,4 +1,4 @@
-import 'package:doctor_app/screens/home_screen.dart';
+import 'package:doctor_app/ui/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,8 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           //adding themes
           colorSchemeSeed: const Color(0xff5a73d8),
-          textTheme: GoogleFonts.plusJakartaSansTextTheme(
-              Theme.of(context).textTheme)),
+          textTheme:
+              GoogleFonts.plusJakartaSansTextTheme(Theme.of(context).textTheme),
+          useMaterial3: true),
       //Navigated To RootScreen
       home: const HomeScreen(),
     );
