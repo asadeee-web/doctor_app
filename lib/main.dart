@@ -1,5 +1,6 @@
 import 'package:doctor_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,10 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Doctor App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+          //adding themes
+          colorSchemeSeed: const Color(0xff5a73d8),
+          textTheme: GoogleFonts.plusJakartaSansTextTheme(
+              Theme.of(context).textTheme)),
       //Navigated To RootScreen
       home: const HomeScreen(),
     );
