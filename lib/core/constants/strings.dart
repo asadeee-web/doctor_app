@@ -1,7 +1,10 @@
 //upcomming card
-String maledoctor = "assets/images/doctor_1.jpg";
+String maledoctor1 = "assets/images/doctor_1.jpg";
 String maledoctor2 = "assets/images/doctor_2.jpg";
-String femaledoctor = "assets/images/doctor_3.jpg";
+String maledoctor3 = "assets/images/doctor_5.jpg";
+
+String femaledoctor1 = "assets/images/doctor_3.jpg";
+String femaledoctor2 = "assets/images/doctor_4.jpg";
 
 String appointment = "assets/images/appointment.png";
 String blood = "assets/images/blood.png";

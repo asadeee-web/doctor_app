@@ -35,7 +35,7 @@ class UpcommingCard extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 2),
                   child: Text(
-                    "Dr Asim",
+                    "Dr.Asim Qureshi",
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,

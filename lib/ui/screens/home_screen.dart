@@ -1,4 +1,5 @@
 import 'package:doctor_app/ui/widgets/health_needs.dart';
+import 'package:doctor_app/ui/widgets/nearby_doctors.dart';
 import 'package:doctor_app/ui/widgets/upcomming_card.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,7 @@ class HomeScreen extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           SizedBox(
-            height: 10,
+            height: 15,
           ),
 
           ///
@@ -51,12 +52,27 @@ class HomeScreen extends StatelessWidget {
           ///
 
           HealthNeeds(),
+          SizedBox(
+            height: 30,
+          ),
+          Text(
+            "Nearby Doctors",
+            style: Theme.of(context).textTheme.headlineSmall,
+          ),
+          SizedBox(
+            height: 15,
+          ),
 
           ///
           ///Nearby Doctors
           ///
+          NearbyDoctors(),
         ],
       ),
+
+      ///
+      ///Bottom Navigation Bar
+      ///
       bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           showSelectedLabels: false,

@@ -1,4 +1,3 @@
-import 'package:doctor_app/core/constants/strings.dart';
 import 'package:doctor_app/core/models/health_need_model.dart';
 import 'package:flutter/material.dart';
 
@@ -7,12 +6,6 @@ class HealthNeeds extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<HealthNeedsModel> list_healthneeds = [
-      HealthNeedsModel(title: "Appointment", image: "$appointment"),
-      HealthNeedsModel(title: "Hospital", image: "$hospital"),
-      HealthNeedsModel(title: "Virus", image: "$virus"),
-      HealthNeedsModel(title: "More", image: "$more"),
-    ];
     return Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: List.generate(
